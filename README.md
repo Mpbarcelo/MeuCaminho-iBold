@@ -1,6 +1,6 @@
 # Meu Caminho - iBold
 
-Este é um projeto de página web desenvolvida com HTML e CSS. A página tem como objetivo apresentar informações sobre Marcia Barcelo, sua trajetória, habilidades e objetivos. O design é responsivo e adaptado para diferentes tamanhos de tela.
+Este é um projeto de página web desenvolvida com HTML e CSS. A página tem como objetivo apresentar informações sobre MEU CAMINHO um quadro pessoal com três perspectivas: passado, presente e futuro, que exige uma reflexão em relação a todos os temas e habilidades que estudamos durante a Jornada da consciência do iBold!. O design é responsivo e adaptado para diferentes tamanhos de tela.
 
 ## Estrutura do Projeto
 
@@ -27,4 +27,4 @@ A página é dividida nas seguintes seções:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/meu-caminho.git
+   git clone https://github.com/Mpbarcelo/MeuCaminho-iBold

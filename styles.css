@@ -113,7 +113,6 @@ button:hover {
   box-shadow: 0px 0px 1rem var(--red-color);
 }
 
-
 /* Estilo do sobre */
 section.sobre {
   padding: 5rem 4%;
@@ -211,7 +210,7 @@ section.rotina .flex {
   height: 500px;
   object-fit: cover;
 }
-.rotina .txt-rotina{
+.rotina .txt-rotina {
   color: var(--white-color);
 }
 .rotina .txt-rotina h2 {
@@ -254,9 +253,8 @@ section.habilidades .flex {
   width: 500px;
   height: 500px;
   object-fit: cover;
-
 }
-.habilidades .txt-habilidades{
+.habilidades .txt-habilidades {
   color: var(--white-color);
 }
 .habilidades .txt-habilidades h2 {
@@ -307,13 +305,13 @@ section.sou-bom .flex {
   font-size: 44px;
 }
 
-.sou-bom .txt-sou-bom  p {
+.sou-bom .txt-sou-bom p {
   color: var(--white-color);
   margin: 20px 0;
   font-size: 1rem;
   font-weight: 600;
 }
-.sou-bom .txt-sou-bom  p span {
+.sou-bom .txt-sou-bom p span {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -340,7 +338,7 @@ button:hover {
     top: 2rem;
   }
 }
-.sou-bom .img-sou-bom  img {
+.sou-bom .img-sou-bom img {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
   width: 450px;
@@ -402,9 +400,8 @@ section.bloqueadores .flex {
   width: 500px;
   height: 500px;
   object-fit: cover;
-
 }
-.bloqueadores .txt-bloqueadores{
+.bloqueadores .txt-bloqueadores {
   color: var(--white-color);
 }
 .bloqueadores .txt-bloqueadores h2 {
@@ -447,9 +444,8 @@ section.metas .flex {
   width: 500px;
   height: 500px;
   object-fit: cover;
-
 }
-.metas .txt-metas{
+.metas .txt-metas {
   color: var(--white-color);
 }
 .metas .txt-metas h2 {
@@ -496,7 +492,7 @@ section.metas .flex {
 /* Media Queries para responsividade */
 @media (max-width: 1200px) {
   section.topo-do-site .flex {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 2rem;
   }
@@ -504,70 +500,120 @@ section.metas .flex {
     width: 350px;
     height: 350px;
   }
+  .topo-do-site .txt-topo-site h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .topo-do-site .interface p {
+    text-align: justify;
+    padding: 30px;
+  }
   section.mentores .flex {
     flex-direction: column;
     align-items: center;
     padding: 4rem 2%;
   }
   .mentores .mentores-box h3 {
+    text-align: center;
     font-size: 1.5rem;
   }
   h2.titulo {
     font-size: 2.25rem;
   }
-  section.rotina .flex{
+  section.rotina .flex {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
   .rotina .txt-rotina h2 {
+    text-align: center;
     font-size: 2.25rem;
+  }
+  .rotina .txt-rotina p {
+    text-align: justify;
+    padding: 20px;
   }
   .rotina .img-rotina img {
     width: 280px;
     height: 280px;
   }
-  section.habilidades .flex{
-    flex-direction: column;
+  section.habilidades .flex {
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     padding: 4rem 3%;
   }
   .habilidades .txt-habilidades h2 {
+    text-align: center;
     font-size: 2.25rem;
+  }
+  .habilidades .txt-habilidades p {
+    text-align: justify;
+    padding: 20px;
   }
   .habilidades .img-habilidades img {
     width: 300px;
     height: 300px;
   }
-  section.sonhos .flex{
-    flex-direction: column-;
+  section.sou-bom .flex {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 4rem 3%;
   }
-  .sonhos  {
-    padding: 2rem;
-}
-  section.bloqueadores .flex{
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 4rem 3%;
+  .sou-bom .txt-sou-bom h2 {
+    text-align: center;
+    font-size: 2.25rem;
   }
-  .bloqueadores .sonhos-box {
-    padding: 2rem;
-}
-  section.metas .flex{
+  .sou-bom .txt-sou-bom p {
+    text-align: justify;
+    padding: 20px;
+  }
+  .sou-bom .img-sou-bom img {
+    width: 300px;
+    height: 300px;
+  }
+  section.sonhos .flex {
     flex-direction: column;
     align-items: center;
     padding: 4rem 3%;
   }
+  .sonhos {
+    padding: 2rem;
+  }
+  section.bloqueadores .flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .bloqueadores .txt-bloqueadores h2 {
+    text-align: center;
+  }
+  .bloqueadores .txt-bloqueadores p {
+    padding: 20px;
+  }
+  .bloqueadores .txt-bloqueadores img {
+    width: 350px;
+    height: 350px;
+  }
+  section.metas .flex {
+    flex-direction: column;
+    align-items: center;
+  }
   .metas .img-metas img {
     width: 350px;
     height: 350px;
-}
+  }
+  .metas .txt-metas h2 {
+    text-align: center;
+  }
+  .metas .txt-metas p {
+    text-align: justify;
+    padding: 20px;
+  }
   .metas .metas-box {
     padding: 2rem;
-}
+  }
 }
 
 @media (max-width: 992px) {
@@ -671,7 +717,7 @@ section.metas .flex {
   .img-habilidades img {
     max-width: 350px;
   }
-   section.habilidades {
+  section.habilidades {
     padding: 2rem 1.5%;
   }
   .habilidades .txt-habilidades h2 {
@@ -734,5 +780,3 @@ section.metas .flex {
     max-width: 300px;
   }
 }
-  
-
