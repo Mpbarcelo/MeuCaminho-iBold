@@ -1,0 +1,738 @@
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  --black-color: #000000;
+  --red-color: #630094;
+  --white-color: #ffffff;
+  --padding: 40px 4%;
+  --typing-speed: 4s; /* Velocidade da digitação */
+}
+
+body {
+  background-color: var(--black-color);
+  height: 100vh;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.interface h1 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Estilo do cabeçalho */
+header {
+  padding: var(--padding);
+}
+
+header > .interface {
+  color: var(--red-color);
+  font-size: 2.5rem;
+  text-align: center;
+  animation: typing var(--typing-speed) steps(30, end) forwards;
+}
+
+/* Animação do efeito digitando */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Estilos do Todo-do-site */
+section.topo-do-site {
+  padding: var(--padding);
+}
+.flex {
+  display: flex;
+}
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.topo-do-site h1 {
+  color: var(--white-color);
+  font-size: 50px;
+  line-height: 40px;
+}
+.topo-do-site h1 span {
+  color: var(--red-color);
+  font-size: 94px;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: var(--white-color);
+  margin: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.topo-do-site .txt-topo-site p span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--red-color);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  box-shadow: 0px 0px 0.5rem var(--red-color);
+  transform: scale(1.05);
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 2rem;
+  }
+}
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1rem var(--red-color);
+}
+
+
+/* Estilo do sobre */
+section.sobre {
+  padding: 5rem 4%;
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.sobre .flex {
+  align-items: center;
+  gap: 3.75rem;
+}
+.img-sobre img {
+  border-radius: 1.25rem;
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 0 0 0.5rem var(--red-color);
+}
+.sobre .txt-sobre {
+  color: var(--white-color);
+}
+.sobre .txt-sobre h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.875rem;
+}
+.sobre .txt-sobre h2 span {
+  color: var(--red-color);
+  display: block;
+}
+.sobre .txt-sobre p {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+.sobre .txt-sobre .btn-social button {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--red-color);
+  font-size: 1.5625rem;
+  cursor: pointer;
+  margin: 0 0.3125rem;
+  transform: 0.2s;
+}
+/* Estilo de mentores */
+section.mentores {
+  padding: var(--padding);
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.mentores .flex {
+  gap: 3.75rem;
+}
+.mentores .mentores-box {
+  color: var(--white-color);
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  margin-top: 2.8125rem;
+  transition: 0.2s;
+}
+.mentores .mentores-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem var(--red-color);
+}
+.mentores .mentores-box img {
+  width: 5rem;
+}
+.mentores .mentores-box h3 {
+  font-size: 1.75rem;
+  margin: 0.9375rem 0;
+}
+.mentores .mentores-box p {
+  text-align: justify;
+}
+h2.titulo {
+  color: var(--white-color);
+  font-size: 2.375rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2.titulo span {
+  color: var(--red-color);
+}
+/* Estilo de rotina */
+section.rotina {
+  padding: 5rem 4%;
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.rotina .flex {
+  align-items: center;
+  gap: 3.75rem;
+}
+.img-rotina img {
+  border-radius: 1.25rem;
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+}
+.rotina .txt-rotina{
+  color: var(--white-color);
+}
+.rotina .txt-rotina h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.875rem;
+}
+.rotina .txt-rotina h2 span {
+  color: var(--red-color);
+  display: block;
+}
+.rotina .txt-rotina p {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+.rotina .txt-rotina.rotina {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--red-color);
+  font-size: 1.5625rem;
+  cursor: pointer;
+  margin: 0 0.3125rem;
+  transform: 0.2s;
+}
+
+/* Estilo de Habilidades */
+section.habilidades {
+  padding: 5rem 4%;
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.habilidades .flex {
+  align-items: center;
+  gap: 3.75rem;
+}
+.img-habilidades img {
+  border-radius: 1.25rem;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+
+}
+.habilidades .txt-habilidades{
+  color: var(--white-color);
+}
+.habilidades .txt-habilidades h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.875rem;
+}
+.habilidades .txt-habilidades h2 span {
+  color: var(--red-color);
+  display: block;
+}
+.habilidades .txt-habilidades p {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+.habilidades .txt-habilidades.habilidades {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--red-color);
+  font-size: 1.5625rem;
+  cursor: pointer;
+  margin: 0 0.3125rem;
+  transform: 0.2s;
+}
+
+/* Estilos do sou-bom */
+section.sou-bom {
+  padding: var(--padding);
+}
+.flex {
+  display: flex;
+}
+section.sou-bom .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.sou-bom h1 {
+  color: var(--white-color);
+  font-size: 30px;
+  line-height: 40px;
+}
+.sou-bom h1 span {
+  color: var(--red-color);
+  font-size: 44px;
+}
+
+.sou-bom .txt-sou-bom  p {
+  color: var(--white-color);
+  margin: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.sou-bom .txt-sou-bom  p span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--red-color);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  box-shadow: 0px 0px 0.5rem var(--red-color);
+  transform: scale(1.05);
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 2rem;
+  }
+}
+.sou-bom .img-sou-bom  img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1rem var(--red-color);
+}
+
+/* Estilo de Sonhos */
+section.sonhos {
+  padding: var(--padding);
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.sonhos .flex {
+  gap: 3.75rem;
+}
+.sonhos .sonhos-box {
+  color: var(--white-color);
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  margin-top: 2.8125rem;
+  transition: 0.2s;
+}
+.sonhos .sonhos-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem var(--red-color);
+}
+.sonhos .sonhos-box img {
+  width: 5rem;
+}
+.sonhos .sonhos-box h3 {
+  font-size: 1.75rem;
+  margin: 0.9375rem 0;
+}
+.sonhos .sonhos-box p {
+  text-align: justify;
+}
+h2.titulo {
+  color: var(--white-color);
+  font-size: 2.375rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2.titulo span {
+  color: var(--red-color);
+}
+
+/* Estilo de Bloqueadores */
+section.bloqueadores {
+  padding: 5rem 4%;
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.bloqueadores .flex {
+  align-items: center;
+  gap: 3.75rem;
+}
+.img-bloqueadores img {
+  border-radius: 1.25rem;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+
+}
+.bloqueadores .txt-bloqueadores{
+  color: var(--white-color);
+}
+.bloqueadores .txt-bloqueadores h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.875rem;
+}
+.bloqueadores .txt-bloqueadores h2 span {
+  color: var(--red-color);
+  display: block;
+}
+.bloqueadores .txt-bloqueadores p {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+.bloqueadores .txt-bloqueadores.bloqueadores {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--red-color);
+  font-size: 1.5625rem;
+  cursor: pointer;
+  margin: 0 0.3125rem;
+  transform: 0.2s;
+}
+
+/* Estilo de Metas */
+section.metas {
+  padding: 5rem 4%;
+  box-shadow: 0 0 2.5rem 0.625rem #ffffff1d;
+}
+section.metas .flex {
+  align-items: center;
+  gap: 3.75rem;
+}
+.img-metas img {
+  border-radius: 1.25rem;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+
+}
+.metas .txt-metas{
+  color: var(--white-color);
+}
+.metas .txt-metas h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.875rem;
+}
+.metas .txt-metas h2 span {
+  color: var(--red-color);
+  display: block;
+}
+.metas .txt-metas p {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+.metas .txt-metas.metas {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--red-color);
+  font-size: 1.5625rem;
+  cursor: pointer;
+  margin: 0 0.3125rem;
+  transform: 0.2s;
+}
+/* Estilo do footer */
+.rodape {
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.rodape a {
+  color: var(--red-color);
+}
+.rodape h4 {
+  color: var(--white-color);
+}
+.rodape-itens {
+  text-align: center;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+  section.topo-do-site .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .topo-do-site .img-topo-site img {
+    width: 350px;
+    height: 350px;
+  }
+  section.mentores .flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2%;
+  }
+  .mentores .mentores-box h3 {
+    font-size: 1.5rem;
+  }
+  h2.titulo {
+    font-size: 2.25rem;
+  }
+  section.rotina .flex{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .rotina .txt-rotina h2 {
+    font-size: 2.25rem;
+  }
+  .rotina .img-rotina img {
+    width: 280px;
+    height: 280px;
+  }
+  section.habilidades .flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 3%;
+  }
+  .habilidades .txt-habilidades h2 {
+    font-size: 2.25rem;
+  }
+  .habilidades .img-habilidades img {
+    width: 300px;
+    height: 300px;
+  }
+  section.sonhos .flex{
+    flex-direction: column-;
+    align-items: center;
+    padding: 4rem 3%;
+  }
+  .sonhos  {
+    padding: 2rem;
+}
+  section.bloqueadores .flex{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 4rem 3%;
+  }
+  .bloqueadores .sonhos-box {
+    padding: 2rem;
+}
+  section.metas .flex{
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 3%;
+  }
+  .metas .img-metas img {
+    width: 350px;
+    height: 350px;
+}
+  .metas .metas-box {
+    padding: 2rem;
+}
+}
+
+@media (max-width: 992px) {
+  .interface h1 {
+    font-size: 1.5rem;
+  }
+  section.curiosidades .flex {
+    flex-direction: column;
+  }
+  .curiosidades .curiosidades-box {
+    margin-top: 2rem;
+  }
+  section.sobre .flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centraliza o texto em telas menores */
+  }
+  .img-sobre img {
+    width: 250px;
+    height: 350px;
+  }
+  section.mentores {
+    padding: 3rem 2%;
+  }
+  .mentores .mentores-box {
+    padding: 2rem;
+  }
+  .mentores .mentores-box h3 {
+    font-size: 1.375rem;
+  }
+  h2.titulo {
+    font-size: 2rem;
+  }
+  section.rotina {
+    padding: 3rem 2%;
+  }
+  .rotina .txt-rotina h2 {
+    font-size: 2rem;
+  }
+  section.habilidades {
+    padding: 3rem 2%;
+  }
+  .habilidades .txt-habilidades h2 {
+    font-size: 2rem;
+  }
+  .img-habilidades img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topo-do-site h1 {
+    font-size: 1.5rem;
+  }
+  .topo-do-site h1 span {
+    font-size: 70px;
+  }
+  .btn-contato button {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 2rem;
+  }
+  .sobre .txt-sobre p {
+    padding: 20px;
+    font-size: 0.875rem;
+  }
+  .btn-social button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+  section.mentores {
+    padding: 2.5rem 1.5%;
+  }
+  .mentores .mentores-box {
+    padding: 1.5rem;
+  }
+  .mentores .mentores-box h3 {
+    font-size: 1.25rem;
+  }
+  h2.titulo {
+    font-size: 1.875rem;
+  }
+  section.rotina {
+    padding: 2.5rem 1.5%;
+  }
+  .rotina .txt-rotina h2 {
+    font-size: 1.875rem;
+  }
+  .img-rotina img {
+    max-width: 350px;
+  }
+  section.habilidades {
+    padding: 2.5rem 1.5%;
+  }
+  .habilidades .txt-habilidades h2 {
+    font-size: 1.875rem;
+  }
+  .img-habilidades img {
+    max-width: 350px;
+  }
+   section.habilidades {
+    padding: 2rem 1.5%;
+  }
+  .habilidades .txt-habilidades h2 {
+    font-size: 1.75rem;
+  }
+  .img-habilidades img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  section.sobre {
+    padding: 3rem 2%;
+  }
+  .topo-do-site .txt-topo-site p {
+    font-size: 0.875rem;
+  }
+  .curiosidades .curiosidades-box h3 {
+    font-size: 1.5rem;
+  }
+  .curiosidades .curiosidades-box p {
+    font-size: 0.875rem;
+  }
+  .topo-do-site h1 {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .topo-do-site h1 span {
+    font-size: 60px;
+  }
+  .img-sobre img {
+    width: 200px;
+    height: 300px;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 1.75rem;
+  }
+  .sobre .txt-sobre p {
+    font-size: 0.75rem;
+  }
+  section.mentores {
+    padding: 2rem 1.5%;
+  }
+  .mentores .mentores-box {
+    padding: 1.25rem;
+  }
+  .mentores .mentores-box h3 {
+    font-size: 1.125rem;
+  }
+  h2.titulo {
+    font-size: 1.75rem;
+  }
+  section.rotina {
+    padding: 2rem 1.5%;
+  }
+  .rotina .txt-rotina h2 {
+    font-size: 1.75rem;
+  }
+  .img-rotina img {
+    max-width: 300px;
+  }
+}
+  
+
